@@ -1,41 +1,21 @@
-
 {
-
-  "name": "sample-node.js-application",
-
+  "name": "sample-node-application",
   "version": "1.0.0",
-
   "description": "",
-
   "main": "index.js",
-
   "scripts": {
-
     "start": "node index.js",
-
     "test": "mocha --recursive --exit"
-
   },
-
   "keywords": [],
-
   "author": "",
-
   "license": "ISC",
-
-  "devDependencies": {
-
-    "chai": "^4.3.10",
-
-    "mocha": "^6.2.1",
-
-     "supertest": "^6.3.3"
-  },
-
   "dependencies": {
-
     "chai-http": "^4.4.0"
-
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^6.2.1",
+    "supertest": "^6.3.3"
   }
-
 }

@@ -1,22 +1,19 @@
-
-const http = require('http');
+const express = require('express');
+const app = express();
 
 const port = 3000;
 
-const server = http.createServer((req, res) => {
-
-    res.statusCode = 200;
-
-    res.setHeader('Content-Type', 'text/plain');
-
-    res.end("WELCOME TO THE WORLD OF Cloud!!!\n'");
-
+// route
+app.get('/', (req, res) => {
+    res.status(404).send('page not found');
 });
 
-server.listen(port, () => {
+// export app for testing
+module.exports = app;
 
-    console.log(`Server running on port Hello mahesh jadhav how are you it updated again testing pupose  ${port}/`);
-
-});
-
-module. Exports = server;
+// run server only if manually started
+if (require.main === module) {
+    app.listen(port, () => {
+        console.log(`Server running on port ${port}`);
+    });
+}
