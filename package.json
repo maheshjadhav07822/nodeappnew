@@ -29,6 +29,7 @@
 
     "mocha": "^6.2.1"
 
+     "supertest": "^6.3.3"
   },
 
   "dependencies": {
