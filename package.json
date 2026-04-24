@@ -7,7 +7,7 @@
 
   "description": "",
 
-  "main": "app.js",
+  "main": "index.js",
 
   "scripts": {
 
